@@ -23,12 +23,12 @@ def home():
     return "<h1>My First Deployed Application</h1><p>This is my first deployed application</p>"
 
 # A route to return all of the available entries in our catalog.
-@app.route('/api/v1/luther_weber/resources/spring/all', methods=['GET'])
+@app.route('/api/v1/luther-weber/resources/spring/all', methods=['GET'])
 @cross_origin()
 def api_all():
     return jsonify(classes_db)
 
-@app.route('/api/v1/luther_weber/resources/spring/professor', methods=['GET'])
+@app.route('/api/v1/luther-weber/resources/spring/professor', methods=['GET'])
 @cross_origin()
 def prof_call():
     # Check if an ID was provided as part of the URL.
@@ -46,7 +46,7 @@ def prof_call():
     # Python dictionaries to the JSON format.
     return jsonify(result)
 
-@app.route('/api/v1/luther_weber/resources/spring/credit', methods=['GET'])
+@app.route('/api/v1/luther-weber/resources/spring/credit', methods=['GET'])
 @cross_origin()
 def cred_call():
     # Check if an ID was provided as part of the URL.
@@ -64,7 +64,7 @@ def cred_call():
     # Python dictionaries to the JSON format.
     return jsonify(result)
 
-@app.route('/api/v1/luther_weber/resources/spring/days', methods=['GET'])
+@app.route('/api/v1/luther-weber/resources/spring/days', methods=['GET'])
 @cross_origin()
 def days_call():
     # Check if an ID was provided as part of the URL.
@@ -83,7 +83,7 @@ def days_call():
     return jsonify(result)
 
 
-@app.route('/api/v1/luther_weber/resources/spring/room', methods=['GET'])
+@app.route('/api/v1/luther-weber/resources/spring/room', methods=['GET'])
 @cross_origin()
 def room_call():
     # Check if an ID was provided as part of the URL.
@@ -101,7 +101,7 @@ def room_call():
     # Python dictionaries to the JSON format.
     return jsonify(result)
 
-@app.route('/api/v1/luther_weber/resources/spring/time', methods=['GET'])
+@app.route('/api/v1/luther-weber/resources/spring/time', methods=['GET'])
 @cross_origin()
 def time_call():
     # Check if an ID was provided as part of the URL.
